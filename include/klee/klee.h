@@ -38,6 +38,8 @@ extern "C" {
 
   void klee_event(unsigned int type, long int value);
 
+  void klee_permutate(void *addr1, void *addr2, size_t length, size_t element_size);
+
   /// klee_range - Construct a symbolic value in the signed interval
   /// [begin,end).
   ///
